@@ -1,4 +1,7 @@
 /*
+#!name=龙湖开门
+#!desc=去除龙湖开门弹窗
+
 [rewrite_local]
 
 ^https:\/\/.*\.longfor\.com\/management\/app\/api\/uHome\/ext\/checkOweFee.*$ url script-response-body https://raw.githubusercontent.com/stupid-pao/Rewrite/refs/heads/master/longfor.js
@@ -20,6 +23,7 @@ try {
 
     body = JSON.stringify(obj);
 
+    $done({ body });
 } catch (error) {
     console.error("Error processing response: ", error)
     $done({});
