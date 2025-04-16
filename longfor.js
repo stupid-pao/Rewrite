@@ -1,12 +1,12 @@
 /*
 [rewrite_local]
 
-^https:\/\/.*\.longfor\.com\/management\/app\/api\/uHome\/ext\/checkOweFee.*$ url script-response-body 
+^https:\/\/.*\.longfor\.com\/management\/app\/api\/uHome\/ext\/checkOweFee.*$ url script-response-body https://raw.githubusercontent.com/stupid-pao/Rewrite/refs/heads/master/longfor.js
 
 [mitm]
 hostname = *.longfor.com
 
-https://pms-c-api.longfor.com/management/app/api/uHome/ext/checkOweFee?projectId=377830214278840320
+https://pms-c-api.longfor.com/management/app/api/uHome/ext/checkOweFee?projectId=3782427840320
 
 */
 
