@@ -19,7 +19,7 @@ var body = $response.body;
 try {
     let obj = JSON.parse(body);
     console.log(obj)
-    obj.data = {
+    final = {
         "status": "ok",
         "code": 0,
         "data": {
@@ -39,7 +39,7 @@ try {
         "timestamp": obj.timestamp 
     }
 
-    body = JSON.stringify(obj);
+    body = JSON.stringify(final);
 
     $done({ body });
 } catch (error) {
@@ -80,7 +80,29 @@ try {
   "timestamp": 1744774631672
 }
 
+{
+  "status": "ok",
+  "code": 0,
+  "data": {
+    "status": "ok",
+    "code": 0,
+    "data": {
+      "closeSecond": 5,
+      "paymentLink": "https:\/\/c4.longfor.com\/uxj-h5\/property?webView=maia&channelCode=entrance",
+      "tipTitle": "温馨提示",
+      "tipContent": "您有物业费待缴纳，请您尽快查看并支付。如已缴纳请忽略。",
+      "oweFee": true
+    },
+    "traceId": "d3fb3a3420094642b36ecd77ed924b1f",
+    "msg": "ok",
+    "timestamp": 1744782036120
+  },
+  "traceId": "d3fb3a3420094642b36ecd77ed924b1f",
+  "msg": "ok",
+  "timestamp": 1744782036120
+}
 
+{"status":"ok","traceId":"d3fb3a3420094642b36ecd77ed924b1f","msg":"ok","code":0,"data":{"tipTitle":null,"tipContent":null,"oweFee":false,"closeSecond":0,"paymentLink":null},"timestamp":1744782036120}{"status":"ok","traceId":"d3fb3a3420094642b36ecd77ed924b1f","msg":"ok","code":0,"data":{"tipTitle":null,"tipContent":null,"oweFee":false,"closeSecond":0,"paymentLink":null},"timestamp":1744782036120}{"status":"ok","traceId":"d3fb3a3420094642b36ecd77ed924b1f","msg":"ok","code":0,"data":{"tipTitle":null,"tipContent":null,"oweFee":false,"closeSecond":0,"paymentLink":null},"timestamp":1744782036120}
   */
 
 
