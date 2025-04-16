@@ -19,7 +19,25 @@ var body = $response.body;
 try {
     let obj = JSON.parse(body);
     console.log(obj)
-    obj.data.oweFee = false
+    obj.data = {
+        "status": "ok",
+        "code": 0,
+        "data": {
+            // "closeSecond": 0,
+            // "paymentLink": null,
+            // "tipTitle": null,
+            // "tipContent": null,
+            // "oweFee": false
+            "closeSecond": 5,
+            "paymentLink": "https:\/\/c4.longfor.com\/uxj-h5\/property?webView=maia&channelCode=entrance",
+            "tipTitle": "温馨提示",
+            "tipContent": "您有物业费待缴纳，请您尽快查看并支付。如已缴纳请忽略。",
+            "oweFee": true
+        },
+        "traceId": obj.traceId,
+        "msg": "ok",
+        "timestamp": obj.timestamp 
+    }
 
     body = JSON.stringify(obj);
 
@@ -28,4 +46,41 @@ try {
     console.error("Error processing response: ", error)
     $done({});
 }
+
+
+/*
+
+{
+  "status": "ok",
+  "code": 0,
+  "data": {
+    "closeSecond": 0,
+    "paymentLink": null,
+    "tipTitle": null,
+    "tipContent": null,
+    "oweFee": false
+  },
+  "traceId": "217399ecd8ee447ab2c32d7d3f6d8f03",
+  "msg": "ok",
+  "timestamp": 1744780948153
+}
+
+{
+  "status": "ok",
+  "code": 0,
+  "data": {
+    "closeSecond": 5,
+    "paymentLink": "https:\/\/c4.longfor.com\/uxj-h5\/property?webView=maia&channelCode=entrance",
+    "tipTitle": "温馨提示",
+    "tipContent": "您有物业费待缴纳，请您尽快查看并支付。如已缴纳请忽略。",
+    "oweFee": true
+  },
+  "traceId": "10efaf8c4b184aed8e75c9d1aab325a0",
+  "msg": "ok",
+  "timestamp": 1744774631672
+}
+
+
+  */
+
 
