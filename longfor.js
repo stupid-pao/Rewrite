@@ -1,10 +1,11 @@
 /*
 #!name=龙湖开门
 #!desc=去除龙湖开门弹窗
+url pattern: ^https:\/\/.*\.longfor\.com\/.*\/checkOweFee$
 
 [rewrite_local]
 
-^https:\/\/.*\/.longfor\/.com\/.*\/checkOweFee.*$ url script-response-body https://raw.githubusercontent.com/stupid-pao/Rewrite/refs/heads/master/longfor.js
+^https:\/\/gw2c-hw-open\.longfor\.com\/supera\/C4\/v1_13_0\/entranceGuard\/checkOweFee$ url script-response-body https://raw.githubusercontent.com/stupid-pao/Rewrite/refs/heads/master/longfor.js
 
 
 [mitm]
