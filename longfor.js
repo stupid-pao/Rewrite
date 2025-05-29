@@ -36,6 +36,7 @@ try {
             "oweFee": true
         },
     }
+    console.log(final)
 
     body = JSON.stringify(final);
 
