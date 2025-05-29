@@ -11,8 +11,6 @@ url pattern: ^https:\/\/.*\.longfor\.com\/.*\/checkOweFee$
 [mitm]
 hostname = *.longfor.com
 
-https://pms-c-api.longfor.com/management/app/api/uHome/ext/checkOweFee?projectId=3782427840320
-
 */
 
 
@@ -50,24 +48,16 @@ try {
 /*
 
 {
-  "status": "ok",
-  "code": 0,
-  "data": {
-    "closeSecond": 0,
-    "paymentLink": null,
-    "tipTitle": null,
-    "tipContent": null,
-    "oweFee": false
-  },
-  "traceId": "217399ecd8ee447ab2c32d7d3f6d8f03",
-  "msg": "ok",
-  "timestamp": 1744780948153
-}
+  "code" : "200",
+  "message" : "ok",
+  "extraMessage" : "",
+  "extraCode" : "",
+  "data" : {
+    "oweFee" : false,
+    "closeSecond" : 0
+  }
 
-
-
-{"status":"ok","traceId":"d3fb3a3420094642b36ecd77ed924b1f","msg":"ok","code":0,"data":{"tipTitle":null,"tipContent":null,"oweFee":false,"closeSecond":0,"paymentLink":null},"timestamp":1744782036120}{"status":"ok","traceId":"d3fb3a3420094642b36ecd77ed924b1f","msg":"ok","code":0,"data":{"tipTitle":null,"tipContent":null,"oweFee":false,"closeSecond":0,"paymentLink":null},"timestamp":1744782036120}{"status":"ok","traceId":"d3fb3a3420094642b36ecd77ed924b1f","msg":"ok","code":0,"data":{"tipTitle":null,"tipContent":null,"oweFee":false,"closeSecond":0,"paymentLink":null},"timestamp":1744782036120}
-
+{
 
 
 {
