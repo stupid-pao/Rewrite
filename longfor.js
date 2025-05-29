@@ -17,21 +17,21 @@ hostname = *.longfor.com
 var body = $response.body;
 
 try {
-    let obj = JSON.parse(body);
-    console.log(obj)
+    // let obj = JSON.parse(body);
+    // console.log(obj)
     final = {
         "code": "200",
         "message": "ok",
         "extraMessage": "",
         "extraCode": "",
         "data": {
-            // "closeSecond": 0,
-            // "oweFee": false
-            "closeSecond": 5,
-            "paymentLink": "https:\/\/c4.longfor.com\/uxj-h5\/property?webView=maia&channelCode=entrance",
-            "tipTitle": "温馨提示",
-            "tipContent": "您有物业费待缴纳，请您尽快查看并支付。如已缴纳请忽略。",
-            "oweFee": true
+            "closeSecond": 0,
+            "oweFee": false
+            // "closeSecond": 5,
+            // "paymentLink": "https:\/\/c4.longfor.com\/uxj-h5\/property?webView=maia&channelCode=entrance",
+            // "tipTitle": "温馨提示",
+            // "tipContent": "您有物业费待缴纳，请您尽快查看并支付。如已缴纳请忽略。",
+            // "oweFee": true
         },
     }
     console.log(final)
