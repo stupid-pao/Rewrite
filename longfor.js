@@ -4,7 +4,7 @@
 
 [rewrite_local]
 
-^https:\/\/.*\/.longfor\/.com\/supera\/C4\/v1_13_0\/entranceGuard\/checkOweFee.*$ url script-response-body https://raw.githubusercontent.com/stupid-pao/Rewrite/refs/heads/master/longfor.js
+^https:\/\/.*\/.longfor\/.com\/.*\/checkOweFee.*$ url script-response-body https://raw.githubusercontent.com/stupid-pao/Rewrite/refs/heads/master/longfor.js
 
 
 [mitm]
@@ -26,16 +26,13 @@ try {
         "extraMessage": "",
         "extraCode": "",
         "data": {
-            "closeSecond": 0,
-            "paymentLink": null,
-            "tipTitle": null,
-            "tipContent": null,
-            "oweFee": false
-            // "closeSecond": 5,
-            // "paymentLink": "https:\/\/c4.longfor.com\/uxj-h5\/property?webView=maia&channelCode=entrance",
-            // "tipTitle": "温馨提示",
-            // "tipContent": "您有物业费待缴纳，请您尽快查看并支付。如已缴纳请忽略。",
-            // "oweFee": true
+            // "closeSecond": 0,
+            // "oweFee": false
+            "closeSecond": 5,
+            "paymentLink": "https:\/\/c4.longfor.com\/uxj-h5\/property?webView=maia&channelCode=entrance",
+            "tipTitle": "温馨提示",
+            "tipContent": "您有物业费待缴纳，请您尽快查看并支付。如已缴纳请忽略。",
+            "oweFee": true
         },
     }
 
