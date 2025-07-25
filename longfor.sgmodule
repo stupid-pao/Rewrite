@@ -1,8 +1,9 @@
 #!name=龙湖开门
-#!desc=去弹窗
+#!desc=去欠费弹窗,去更新弹窗
 
 [Script]
 longfor = type=http-response, pattern=^https:\/\/gw2c-hw-open\.longfor\.com\/supera\/C4\/v1_13_0\/entranceGuard\/checkOweFee$, script-path=https://raw.githubusercontent.com/stupid-pao/Rewrite/refs/heads/master/longfor.js, requires-body=true, max-size=-1, timeout=60
+longforUpdateReject = type=http-response, pattern=^https:\/\/maiaplat\.longfor\.com\/openapi\/maiaplat-prod\/grayRelease\/checkVersion$, script-path=https://raw.githubusercontent.com/stupid-pao/Rewrite/refs/heads/master/longforUpdateReject.js, requires-body=true, max-size=-1, timeout=60
 
 [MITM]
 hostname = %APPEND% *.longfor.com
