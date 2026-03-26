@@ -1,6 +1,6 @@
 #!name=SafariRedirect
 #!desc=RedirectGoogle.cn
-# #!arguments=Mock:"https://www.google.com.hk"
+#!arguments=Mock:"https://www.google.com.hk"
 
 
 [URL Rewrite]
