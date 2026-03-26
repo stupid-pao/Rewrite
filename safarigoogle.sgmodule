@@ -4,7 +4,7 @@
 
 
 [URL Rewrite]
-^https:\/\/google\.cn(.*) {{{Mock}}}$1 header
+^https:\/\/google\.cn(.*) {{{Mock}}}$1 302
 # ^https:\/\/www\.google\.cn(.*) https://www.google.com.hk$1 302
 
 
