@@ -1,11 +1,11 @@
-#!name=SafariRedirect
-#!desc=RedirectGoogle.cn
-#!arguments=Mock:"https://www.google.com.hk"
+#!name=directGoogle
+#!desc= argumentsRedirectGoogle.cn
+# #!arguments=Mock:"https://www.google.com.hk"
 
 
 [URL Rewrite]
-^https:\/\/google\.cn(.*) {{{Mock}}}$1 302
-# ^https:\/\/www\.google\.cn(.*) https://www.google.com.hk$1 302
+# ^https:\/\/google\.cn(.*) {{{Mock}}}$1 302
+^https:\/\/www\.google\.cn(.*) https://www.google.com.hk$1 302
 
 
 [MITM]
